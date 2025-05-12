@@ -44,11 +44,11 @@ python app.py
 docker build -t conversor-ofx-csv .
 docker run -p 5000:5000 conversor-ofx-csv
 
+```
 ## Api
-
+```bash
 POST /upload
 curl -X POST -F 'file=@extratos.zip' http://localhost:5000/upload --output resultado.csv
-
 ```
 
 ## 🔄 Casos de uso comuns
