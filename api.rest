@@ -1,0 +1,33 @@
+###
+POST http://localhost:5000/upload
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="bank"
+
+MeuBanco
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="jan-marc.zip"
+Content-Type: application/zip
+
+< ./data/cx-fev.ofx
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+
+POST http://localhost:5000/upload
+Content-Type: multipart/form-data; boundary=----MyBoundary123
+
+------MyBoundary123
+Content-Disposition: form-data; name="bank"
+
+MeuBanco
+------MyBoundary123
+Content-Disposition: form-data; name="file"; filename="jan-marc.zip"
+Content-Type: application/zip
+
+< ./data/jan-marc.zip
+
+------MyBoundary123--
+
+###
