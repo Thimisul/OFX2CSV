@@ -160,4 +160,4 @@ def upload_file():
         return send_file(output_csv, mimetype='text/csv', as_attachment=True, download_name='saida.csv')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True, port=5000)
+    app.run(host='0.0.0.0', port=5000)
